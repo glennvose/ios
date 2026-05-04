@@ -1,2 +1,0 @@
-Initial Landing page
-test
