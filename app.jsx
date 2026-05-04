@@ -646,7 +646,7 @@ function VideoModal({ video, onClose, onMarkDone, isDone }) {
       `}</style>
 
       {/* status bar passthrough */}
-      <div style={{ height: 54, flexShrink: 0 }} />
+      <div style={{ height: 'env(safe-area-inset-top, 12px)', flexShrink: 0 }} />
 
       <div style={{
         flex: 1, display: 'flex', flexDirection: 'column',
@@ -889,7 +889,7 @@ function App() {
       display: 'flex', flexDirection: 'column', position: 'relative',
       overflow: 'hidden'
     }}>
-      <StatusBar />
+      <div style={{ height: 'env(safe-area-inset-top, 0px)', flexShrink: 0 }}/>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
         {main}
       </div>
